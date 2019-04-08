@@ -1,0 +1,23 @@
+name=Teleport
+
+# animation info
+gfx=animations/npcs/return_obelisk2.txt
+
+talker=true
+#[dialog]
+#topic=Craft
+#book=books/crafting_alchemy.txt
+
+[dialog]
+topic=Spawn
+intermap=maps/arrival.txt,42,10
+
+[dialog]
+topic=Grasslands
+requires_status=fallen_waypoint_grasslands
+intermap=maps/grasslands.txt,14,80
+
+[dialog]
+topic=Infested Caves
+requires_status=fallen_waypoint_infested_caves
+intermap=maps/infested_caves.txt,38,97

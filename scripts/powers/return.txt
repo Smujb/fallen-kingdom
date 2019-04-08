@@ -1,0 +1,2 @@
+[event]
+intermap=maps/arrival.txt,20,5

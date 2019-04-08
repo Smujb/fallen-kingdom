@@ -1,0 +1,47 @@
+name=Magician
+
+portrait=images/portraits/male07.png
+
+# animation info
+gfx=animations/npcs/peasant_man2.txt
+
+# shop info
+vendor=true
+constant_stock=750,750,750,750,750,750,750,750,750,750,750,750,750,750,750,750,750,750,750,750,750,750,750,750,750,750,750,750,750,750,750,750,750,750,750,750,750,750,750,750
+
+talker=true
+
+[dialog]
+topic=Craft
+book=books/crafting_alchemy.txt
+
+[dialog]
+requires_status=fallen_lorsion_defeated
+requires_not_status=fallen_lorsion_reward
+topic=Lorsion's Defeat
+you=I have slain Lorsion the Destroyer.
+him=So you managed to defeat Lorsion?
+you=Yes, here is his sword.
+him=I will perform the ritual to activate it.
+remove_item=1000
+response=Yes
+response=No
+him=Do you want to keep the sword or give it to me for safety? It has been known to turn people evil, as it is very powerful.
+
+
+
+[dialog]
+id=Yes
+topic=Yes
+response_only=true
+him=Here it is.
+reward_item=1100
+set_status=fallen_lorsion_reward
+
+[dialog]
+id=No
+topic=No
+response_only=true
+him=Ok then, I will keep it. Have your reward in gold instead.
+reward_currency=2000
+set_status=fallen_lorsion_reward

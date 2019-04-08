@@ -1,0 +1,53 @@
+# Hero classes
+# name must be first
+# physical/mental/offense/defense points should total to no greater than the max available points
+
+[class]
+name=Warrior
+description=Warriors rely on physical strength and melee weapons to strike down foes. They start with the Ring of Rage, which provides buffs when on half health or lower.
+equipment=4,5,6,7,106,11,8,8,8,8
+carried=2,2,2,2,2,3,3,3,3,3,9006
+primary=physical,4
+actionbar=0,0,0,0,0,0,0,0,0,0,10001,10004
+default_power_tab=0
+
+[class]
+name=Sniper
+description=Snipers rely mainly on ranged weapons to deal damage. They start with a unique bow that has a chance of spawning a bonus arrow when used.
+equipment=4,5,6,7,8,9005
+carried=2,2,2,2,2,3,3,3,3,3,9001,9001,9001,9001,9001,9001,9001,9001,9001,9001,9001,9001,9001,9001,9001,9001,9001,9001,9001,9001
+primary=offense,4
+actionbar=0,0,0,0,0,0,0,0,0,0,10001,10003
+default_power_tab=0
+
+[class]
+name=Asassin
+description=Asassins rely on stealth to sneak up on enemies. They start with the Ring of Shadows that allow them to temporarily turn invisible.
+equipment=4,5,6,7,8,11,12
+carried=2,2,2,2,2,3,3,3,3,3
+primary=defense,4
+actionbar=0,0,0,0,0,0,0,0,0,0,10001,10009
+default_power_tab=0
+
+
+[class]
+name=Mage
+description=Mages rely on staffs and wands to defeat enemies. They start with the Spellbook, which gives faster MP regeneration, higher overall MP and more damage with mental weapons.
+equipment=4,5,6,7,10,11,9013
+carried=2,2,2,2,2,3,3,3,3,3
+primary=mental,4
+actionbar=0,0,0,0,0,0,0,0,0,0,10001,10011
+default_power_tab=0
+
+
+[class]
+name=Developer
+description=Class for testing content.
+equipment=4,5,6,7,10,11,9013
+carried=2,2,2,2,2,3,3,3,3,3,12,9005,9006,106,9001,9001,9001,9001,9001,9001,9001,9001,9001,9001,9001,9001,9001,9001,9001,9001,9001,9001,9001,9001,9002,9003,9004,9007,9008,9009,9010,9011,9012,9013,9014,9015,9016,9017,9018,9023,2000,2001
+primary=mental,14
+primary=physical,14
+primary=defense,14
+primary=offense,14
+actionbar=0,0,0,0,0,0,0,0,0,0,10001,10011
+default_power_tab=0

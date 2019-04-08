@@ -1,0 +1,11 @@
+name=Destroy the first guardian.
+
+[quest]
+requires_status=fallen_lorsion_init
+requires_not_status=fallen_lorsion_defeated
+quest_text=Find the first guardian's hidden lair in the Infested Caves you were in earlier.
+
+[quest]
+requires_status=fallen_lorsion_defeated
+requires_not_status=fallen_lorsion_reward
+quest_text=Go back to the village and report Lorsion's defeat.

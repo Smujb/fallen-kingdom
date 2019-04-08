@@ -1,0 +1,5 @@
+directional=true
+animation=animations/powers/arrows.txt
+requires_flags=bow
+wall_power=157
+requires_item=9001

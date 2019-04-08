@@ -1,0 +1,4 @@
+directional=true
+animation=animations/powers/throw_axe.txt
+new_state=swing
+requires_item=9002

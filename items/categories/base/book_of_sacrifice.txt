@@ -1,0 +1,6 @@
+name=Book Of Sacrifice
+description=When used, the book will be upgraded. Each upgrade will require more HP from the player, but will increase the amount of HP regen.
+INCLUDE items/base/misc/spellbook.txt
+level=3
+quality=rare
+price=1500

@@ -1,0 +1,2 @@
+INCLUDE items/base/shields/steel.txt
+#replace_power=10002,14002

@@ -1,0 +1,2 @@
+INCLUDE powers/base/ranger/ember_shot.txt
+modifier_damage=multiply,14,0

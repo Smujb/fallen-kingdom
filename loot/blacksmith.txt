@@ -1,0 +1,15 @@
+INCLUDE loot/_level_1.txt
+loot=9007,2
+loot=9008,2
+loot=9009,2
+loot=9010,2
+loot=9011,2
+loot=9012,2
+loot=9014,2
+loot=9015,2
+loot=9016,2
+loot=9017,2
+loot=110,2
+loot=753,2
+loot=9019,2
+loot=9023,2

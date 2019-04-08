@@ -1,0 +1,2 @@
+APPEND
+replace_power=10001,12001

@@ -1,0 +1,207 @@
+# equipment intended for players level 1
+
+[item]
+id=107
+name=Bow
+quality=normal
+item_type=off
+equip_flags=ranged,bow
+icon=114
+soundfx=soundfx/inventory/inventory_wood.ogg
+gfx=longbow
+loot_animation=animations/loot/longbow.txt
+level=1
+price=500
+dmg=ranged,45,50
+power=10003
+replace_power=10003,10002
+
+[item]
+id=106
+name=Shortsword
+INCLUDE items/base/weapons/melee/shortsword.txt
+level=1
+price=500
+dmg=melee,45,55
+requires_stat=physical,4
+power=10001
+
+[item]
+id=4
+name=Cloth Shirt
+INCLUDE items/base/armor/cloth/chest.txt
+level=0
+price=75
+
+[item]
+id=5
+name=Cloth Pants
+INCLUDE items/base/armor/cloth/legs.txt
+level=0
+price=50
+
+[item]
+id=6
+name=Cloth Sandals
+INCLUDE items/base/armor/cloth/feet.txt
+level=0
+price=30
+
+[item]
+id=7
+name=Cloth Gloves
+INCLUDE items/base/armor/cloth/hands.txt
+level=0
+price=25
+
+[item]
+id=8
+name=Knife
+INCLUDE items/base/weapons/melee/dagger.txt
+description=A knife. Can be used as a melee weapon or thrown at enemies.
+level=0
+price=30
+dmg=melee,25,30
+max_quantity=40
+power=10005
+
+[item]
+id=9
+name=Slingshot
+INCLUDE items/base/weapons/ranged/slingshot.txt
+level=1
+price=100
+dmg=ranged,25,30
+requires_stat=offense,2
+power=10006
+replace_power=10006,10007
+
+[item]
+id=10
+name=Wand
+INCLUDE items/base/weapons/magic/wand.txt
+level=1
+price=100
+dmg=ment,25,30
+dmg=melee,15,20
+requires_stat=mental,2
+power=10011
+
+[item]
+id=11
+name=Wood Buckler
+INCLUDE items/base/shields/wood.txt
+level=1
+price=75
+dmg=resist,25,30
+abs=4,5
+
+[item]
+id=96
+name=Leather Hood
+INCLUDE items/base/armor/leather/head.txt
+level=5
+price=150
+abs=1,2
+requires_stat=defense,2
+bonus=hp,10
+
+[item]
+id=97
+name=Leather Tunic
+INCLUDE items/base/armor/leather/chest.txt
+level=5
+price=375
+abs=2,3
+requires_stat=defense,3
+bonus=hp,80
+
+[item]
+id=98
+name=Leather Pants
+INCLUDE items/base/armor/leather/legs.txt
+level=5
+price=250
+abs=2
+requires_stat=defense,3
+bonus=hp,60
+
+[item]
+id=99
+name=Leather Boots
+INCLUDE items/base/armor/leather/feet.txt
+level=5
+price=150
+abs=1,2
+requires_stat=defense,2
+bonus=hp,30
+
+[item]
+id=100
+name=Leather Gloves
+INCLUDE items/base/armor/leather/hands.txt
+level=5
+price=125
+abs=1,2
+requires_stat=defense,2
+bonus=hp,10
+
+[item]
+id=101
+name=Wool Hood
+INCLUDE items/base/armor/mage/head.txt
+level=5
+price=150
+abs=1
+bonus=mp,6
+
+[item]
+id=102
+name=Wool Vest
+INCLUDE items/base/armor/mage/chest.txt
+level=5
+price=375
+abs=2
+requires_stat=defense,2
+bonus=mp,16
+
+[item]
+id=103
+name=Wool Skirt
+INCLUDE items/base/armor/mage/legs.txt
+level=5
+price=250
+abs=1,2
+requires_stat=defense,2
+bonus=mp,12
+
+[item]
+id=104
+name=Wool Boots
+INCLUDE items/base/armor/mage/feet.txt
+level=5
+price=150
+abs=1
+bonus=mp,6
+
+[item]
+id=105
+name=Wool Sleeves
+INCLUDE items/base/armor/mage/hands.txt
+level=5
+price=125
+abs=1
+bonus=mp,2
+
+[item]
+id=110
+name=Cursed Leather Tunic
+INCLUDE items/base/armor/leather/chest.txt
+quality=epic
+level=5
+price=375
+abs=2,3
+requires_stat=defense,3
+power_desc=You can feel the malevolent magic lurking in this item.
+power=10018
+bonus=hp,80

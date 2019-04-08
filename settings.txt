@@ -1,0 +1,7 @@
+description=Fallen Kingdom - a fan-made flare mod.
+requires=fantasycore
+game=flare-game
+version=1.4.1
+engine_version_min=1.09.01
+
+

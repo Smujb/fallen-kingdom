@@ -1,0 +1,64 @@
+V1.4.1 (Latest):
+
+Improved the Desert map and the second boss room
+
+Fixed the Developer teleporting power
+
+Buffed the Shortsword
+
+Added Lorsion's Blade as a useable weapon. Consider using the boss weapons as a kind of "Easy mode". Balance changes may be made to it in future.
+
+Made the Desert map availible to non-developer classes
+
+Added Skeleton enemies who have high evasion but low HP for their level
+
+
+V1.4.0:
+
+Made armour a more common drop
+
+Added a new boss fight
+
+Added bonuses to the new armour
+
+Nerfed the Lucky Pendant and Book of Sacrifice
+
+Added a new boss fight in the forest area on the big map
+
+
+V1.3.3:
+
+Added the Desert and Snow tilesets and a Desert map for testing (Developer Only)
+
+Added a Developer power to return to spawn if softlocked (Occasionally crashes the game although I beleive this is an issue with the engine, not my code)
+
+
+V1.3.2:
+
+Added the Book of Sacrifice and Lucky Pendant
+
+Increased gold loot chance and amount
+
+
+V1.3.1:
+
+Reduced Lorsion's health to 1600, reduced his melee damage to 30-45
+
+Slowed the spawn rate of Antilon Queen's minions
+
+Added the "Developer" class for testing purposes
+
+Removed the spawn that took you to Gormel's boss room unless you are a developer (he is far from finished and needs a rework)
+
+
+V1.3:
+
+Added armour
+
+Added cursed Items - currently only a wand and armour. Cursed items are normally more powerful but have some trade-off.
+
+Rebalanced the Lightning wand.
+
+Made epic items more commonly sold by the Blacksmith again, however not quite at the same level as before.
+
+

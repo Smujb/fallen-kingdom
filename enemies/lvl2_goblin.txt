@@ -1,0 +1,34 @@
+INCLUDE enemies/base/goblin.txt
+
+name=Goblin
+level=2
+categories=goblin,dungeon,grassland
+rarity=common
+xp=2
+
+# combat stats
+stat=hp,90
+speed=3.25
+melee_range=1.125
+turn_delay=400ms
+chance_pursue=10
+
+stat=mp,9
+
+power=melee,164,10
+power=melee,168,5
+
+stat=accuracy,85
+stat=avoidance,10
+stat=poise,10
+
+stat=dmg_melee_min,15
+stat=dmg_melee_max,20
+cooldown=1200ms
+
+stat=accuracy,80
+stat=avoidance,10
+stat=poise,20
+
+# loot
+loot=loot/level_1.txt

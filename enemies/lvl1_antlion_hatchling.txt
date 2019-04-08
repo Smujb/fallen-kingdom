@@ -1,0 +1,28 @@
+INCLUDE enemies/base/antlion_small.txt
+
+name=Antlion Hatchling
+level=1
+categories=antlion_hatchling,antilon,cave
+rarity=common
+xp=1
+
+# combat stats
+stat=hp,20
+speed=7.5
+turn_delay=166ms
+
+chance_pursue=30
+
+power=melee,164,2
+stat=accuracy,90
+stat=avoidance,10
+stat=poise,15
+
+stat=dmg_melee_min,40
+stat=dmg_melee_max,45
+
+cooldown=1475ms
+
+# loot
+loot=loot/level_1.txt
+

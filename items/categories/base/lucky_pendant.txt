@@ -1,0 +1,10 @@
+name=Lucky Pendant
+description=When used, the pendant will be upgraded. Each upgrade will require more gold but increase your luck.
+quality=epic
+item_type=artifact
+icon=486
+soundfx=soundfx/inventory/inventory_gem.ogg
+loot_animation=animations/loot/gem.txt
+level=3
+quality=rare
+price=1500

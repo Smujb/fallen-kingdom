@@ -1,0 +1,4 @@
+directional=false
+requires_item=9003
+animation=animations/powers/stone.txt
+

@@ -1,0 +1,12 @@
+name=Block
+icon=4
+description=Raise your shield to decrease enemy damage.
+type=fixed
+new_state=block
+state_duration=750ms
+face=true
+requires_flags=shield
+post_effect=reflect_chance,100,2000ms
+post_effect=avoidance,200,2000ms
+post_effect=block_icon,1,2000ms
+cooldown=2s

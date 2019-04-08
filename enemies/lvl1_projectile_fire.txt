@@ -1,0 +1,21 @@
+animations=animations/powers/fireball_chase.txt
+
+name=Projectile
+level=1
+categories=projectile
+rarity=rare
+xp=0
+
+# combat stats
+stat=hp,1
+speed=8
+turn_delay=200ms
+
+chance_pursue=100
+melee_range=1.1
+threat_range=100
+power=melee,182,100
+
+stat=dmg_ment_min,150
+stat=dmg_ment_max,155
+

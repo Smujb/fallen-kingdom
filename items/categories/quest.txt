@@ -1,0 +1,39 @@
+[item]
+id=1000
+name=Hell's Blade
+INCLUDE items/base/weapons/melee/greatsword.txt
+quest_item=true
+quality=unique
+item_type=Lorsion's Sword
+flavor=Forged in the depths of hell by Lorsion himself before he was raised by the Necromacer, this sword is a force to be reckoned with.
+pickup_status=fallen_lorsion_item
+
+[item]
+id=1100
+name=Hell's Blade
+INCLUDE items/base/weapons/melee/greatsword.txt
+quest_item=true
+quality=unique
+dmg=melee,100,125
+flavor=Forged in the depths of hell by Lorsion himself before he was raised by the Necromacer, this sword is a force to be reckoned with.
+power=41002
+
+
+[item]
+id=1001
+name=Elemental Staff
+INCLUDE items/base/weapons/magic/greatstaff.txt
+quest_item=true
+quality=unique
+item_type=Gormel's Staff
+pickup_status=fallen_gormel_item
+
+[item]
+id=1101
+name=Elemental Staff
+INCLUDE items/base/weapons/magic/greatstaff.txt
+quest_item=true
+quality=unique
+item_type=Gormel's Staff
+power=40003
+power_desc=Use: Shoot homing missiles.

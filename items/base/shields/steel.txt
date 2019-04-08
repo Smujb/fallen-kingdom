@@ -1,0 +1,2 @@
+APPEND
+#replace_power=10002,13002

@@ -1,0 +1,2 @@
+APPEND
+miss_damage_percent=0,0

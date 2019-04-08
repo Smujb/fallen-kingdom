@@ -1,0 +1,22 @@
+animations=animations/powers/channel.txt
+
+name=Projectile
+level=1
+categories=projectile
+rarity=rare
+xp=0
+
+# combat stats
+stat=hp,1
+speed=8
+turn_delay=200ms
+
+chance_pursue=100
+melee_range=1.1
+threat_range=100
+power=melee,1821,100
+
+stat=dmg_ment_min,140
+stat=dmg_ment_max,145
+stat=accuracy,105
+stat=avoidance,25

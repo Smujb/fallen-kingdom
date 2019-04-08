@@ -1,0 +1,2 @@
+[event]
+power=10019

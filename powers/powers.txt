@@ -1,0 +1,463 @@
+# Power Definitions
+INCLUDE powers/categories/items.txt
+INCLUDE powers/categories/enemy.txt
+
+# Powers menu (aka hero powers)
+[power]
+id=10001
+name=Swing
+type=fixed
+icon=1
+description=Basic melee attack.
+new_state=swing
+face=true
+use_hazard=true
+base_damage=melee
+lifespan=33ms
+radius=1.0
+cooldown=600ms
+starting_pos=melee
+aim_assist=true
+
+[power]#Spear version
+id=11001
+name=Swing (Spear)
+type=fixed
+icon=1
+description=Basic melee attack.
+new_state=swing
+face=true
+use_hazard=true
+base_damage=melee
+lifespan=33ms
+cooldown=800ms
+radius=2.2
+starting_pos=melee
+aim_assist=true
+
+[power]#Wand version
+id=12001
+name=Swing (Wand)
+type=fixed
+icon=1
+description=Basic melee attack.
+new_state=swing
+face=true
+use_hazard=true
+base_damage=melee
+lifespan=33ms
+radius=1.0
+cooldown=600ms
+starting_pos=melee
+aim_assist=true
+requires_flags=mental
+mp_steal=20
+
+[power]
+id=10002
+INCLUDE powers/base/ranger/shoot.txt
+INCLUDE powers/base/ranger/ammo_arrow.txt
+cooldown=800ms
+requires_equipped_item=107
+
+[power]#Unique Bow
+id=11002
+INCLUDE powers/base/ranger/shoot.txt
+INCLUDE powers/base/ranger/ammo_arrow.txt
+cooldown=800ms
+script=on_cast,scripts/powers/unique_bow.txt
+requires_equipped_item=9005
+
+[power]#Multishot Bow
+id=12002
+INCLUDE powers/base/ranger/multishot.txt
+INCLUDE powers/base/ranger/ammo_arrow.txt
+requires_item=9001,3
+cooldown=800ms
+requires_equipped_item=9007
+
+[power]#Rapid Fire Bow
+id=13002
+INCLUDE powers/base/ranger/rapid_fire.txt
+INCLUDE powers/base/ranger/ammo_arrow.txt
+requires_item=9001,5
+cooldown=800ms
+requires_equipped_item=9008
+
+[power]#Piercing Shot Bow
+id=14002
+INCLUDE powers/base/ranger/piercing_shot.txt
+INCLUDE powers/base/ranger/ammo_arrow.txt
+requires_item=9001,2
+modifier_damage=multiply,150
+speed=35
+cooldown=800ms
+requires_equipped_item=9009
+
+[power]
+id=10003
+name=Throw Arrow
+type=missile
+icon=23
+description=Basic ranged attack. Thrown arrows are very innefective, perhaps you could find a bow?
+new_state=swing
+face=true
+soundfx=soundfx/powers/shoot.ogg
+use_hazard=true
+starting_pos=melee
+aim_assist=true
+base_damage=ranged
+lifespan=533ms
+cooldown=400ms
+radius=1.0
+speed=10
+modifier_damage=absolute,20,25
+directional=true
+animation=animations/powers/arrows.txt
+wall_power=157
+requires_item=9001
+
+[power]
+id=10004
+name=Throw Axe
+type=missile
+icon=33
+description=Basic ranged attack.
+new_state=swing
+face=true
+soundfx=soundfx/powers/shoot.ogg
+use_hazard=true
+starting_pos=melee
+aim_assist=true
+base_damage=melee
+lifespan=533ms
+cooldown=800ms
+radius=1.0
+speed=40
+modifier_damage=multiply,125,0
+modifier_accuracy=multiply,125,0
+INCLUDE powers/base/ranger/ammo_axe.txt
+
+[power]
+id=10005
+name=Throw Knife
+type=missile
+icon=32
+description=Basic ranged attack.
+new_state=swing
+face=true
+soundfx=soundfx/powers/shoot.ogg
+use_hazard=true
+starting_pos=melee
+aim_assist=true
+base_damage=melee
+lifespan=533ms
+cooldown=600ms
+radius=1.0
+speed=20
+modifier_damage=multiply,75,0
+modifier_accuracy=multiply,75,0
+post_effect=bleeding,5,5s
+INCLUDE powers/base/ranger/ammo_knife.txt
+
+[power]
+id=10006
+name=Throw Stone
+type=missile
+icon=15
+description=Basic ranged attack. Thrown stones are very ineffective, perhaps you could find a slingshot?
+new_state=swing
+face=true
+soundfx=soundfx/powers/shoot.ogg
+use_hazard=true
+starting_pos=melee
+aim_assist=true
+lifespan=1000ms
+cooldown=400ms
+radius=1.0
+speed=9
+INCLUDE powers/base/ranger/ammo_stone.txt
+modifier_damage=absolute,15,20
+
+[power]
+id=10007
+INCLUDE powers/base/ranger/shoot.txt
+INCLUDE powers/base/ranger/ammo_stone.txt
+speed=20
+requires_equipped_item=9
+
+[power]#Multishot Slingshot
+id=11007
+INCLUDE powers/base/ranger/multishot.txt
+INCLUDE powers/base/ranger/ammo_stone.txt
+requires_item=9003,3
+speed=20
+requires_equipped_item=9010
+
+[power]#Rapid Fire Slingshot
+id=12007
+INCLUDE powers/base/ranger/rapid_fire.txt
+INCLUDE powers/base/ranger/ammo_stone.txt
+speed=20
+requires_item=9003,5
+requires_equipped_item=9011
+
+[power]#Piercing Slingshot
+id=13007
+INCLUDE powers/base/ranger/piercing_shot.txt
+INCLUDE powers/base/ranger/ammo_stone.txt
+speed=20
+requires_item=9003,2
+modifier_damage=multiply,150
+requires_item=9003,5
+requires_equipped_item=9012
+
+[power]
+id=10008
+name=Throw Spear
+icon=1
+type=missile
+new_state=shoot
+face=true
+directional=true
+requires_los=true
+animation=animations/powers/spear.txt
+use_hazard=true
+aim_assist=true
+base_damage=melee
+lifespan=900ms
+radius=1.0
+speed=16
+angle_variance=10
+modifier_accuracy=multiply,75,0
+requires_item=9004
+
+[power]
+id=10009
+name=Turn Invisible
+icon=9
+type=fixed
+new_state=cast
+buff=true
+post_effect=shadowstep,0,10s
+post_effect=stealth,100,10s
+post_effect=avoidance,20,10s
+post_effect=accuracy,20,10s
+cooldown=50s
+soundfx=soundfx/powers/shield.ogg
+requires_equipped_item=12
+
+[power]
+id=10011
+INCLUDE powers/base/magician/shoot.txt
+icon=2
+requires_mp=2
+trait_armor_penetration=true
+requires_equipped_item=10
+
+[power]#Fire Wand
+id=10012
+INCLUDE powers/base/magician/fire.txt
+icon=2
+requires_mp=4
+trait_armor_penetration=true
+requires_equipped_item=9014
+
+[power]#Ice Wand
+id=10013
+INCLUDE powers/base/magician/ice.txt
+post_effect=slow,25,5s
+icon=2
+requires_mp=4
+trait_armor_penetration=true
+requires_equipped_item=9015
+
+[power]#Lightning Wand
+id=10014
+INCLUDE powers/base/magician/shock.txt
+icon=2
+requires_mp=4
+new_state=cast
+trait_armor_penetration=true
+requires_equipped_item=9016
+
+[power]#Lightning Wand (repeated)
+id=11014
+INCLUDE powers/base/magician/shock.txt
+icon=2
+requires_mp=1
+new_state=instant
+trait_armor_penetration=true
+requires_equipped_item=9016
+
+[power]#Cursed Wand
+id=10017
+INCLUDE powers/base/magician/dark.txt
+icon=2
+requires_mp=4
+trait_armor_penetration=true
+requires_equipped_item=9017
+
+[power]
+id=10018
+type=fixed
+buff=true
+requires_equipped_item=110
+passive=true
+passive_trigger=on_hit
+post_effect=mp_restore,10,1s
+script=on_cast,scripts/powers/quake.txt
+
+[power]
+id=10019
+INCLUDE powers/base/warrior/quake.txt
+modifier_damage=multiply,0,0
+post_effect=knockback,30,300ms
+ignore_zero_damage=true
+source_type=player
+
+[power]#Book Of Sacrifice
+id=10020
+type=fixed
+icon=79
+name=Sacrifice (Level 1)
+sacrifice=true
+new_state=cast
+requires_hp=40
+script=on_cast,scripts/powers/book_of_sacrifice_1.txt
+requires_equipped_item=9018,1
+
+[power]#Book Of Sacrifice
+id=11020
+type=fixed
+icon=79
+name=Sacrifice (Level 2)
+new_state=cast
+requires_hp=80
+sacrifice=true
+script=on_cast,scripts/powers/book_of_sacrifice_2.txt
+requires_equipped_item=9019,1
+
+[power]#Book Of Sacrifice
+id=12020
+type=fixed
+icon=79
+name=Sacrifice (Level 3)
+new_state=cast
+requires_hp=160
+sacrifice=true
+script=on_cast,scripts/powers/book_of_sacrifice_3.txt
+requires_equipped_item=9020,1
+
+[power]#Book Of Sacrifice
+id=13020
+type=fixed
+icon=79
+name=Sacrifice (Level 4)
+new_state=cast
+requires_hp=320
+sacrifice=true
+script=on_cast,scripts/powers/book_of_sacrifice_4.txt
+requires_equipped_item=9021,1
+
+[power]#Lucky Pendant
+id=10021
+type=fixed
+icon=79
+name=Feed Gold (Level 1)
+new_state=cast
+requires_item=1,100
+script=on_cast,scripts/powers/lucky_pendant_1.txt
+requires_equipped_item=9023,1
+
+[power]#Lucky Pendant
+id=11021
+type=fixed
+icon=79
+name=Feed Gold(Level 2)
+new_state=cast
+requires_item=1,200
+script=on_cast,scripts/powers/lucky_pendant_2.txt
+requires_equipped_item=9024,1
+
+[power]#Lucky Pendant
+id=12021
+type=fixed
+icon=79
+name=Feed Gold (Level 3)
+new_state=cast
+requires_item=1,400
+script=on_cast,scripts/powers/lucky_pendant_3.txt
+requires_equipped_item=9025,1
+
+[power]#Lucky Pendant
+id=13021
+type=fixed
+icon=79
+name=Feed Gold (Level 4)
+new_state=cast
+requires_item=1,800
+script=on_cast,scripts/powers/lucky_pendant_4.txt
+requires_equipped_item=9026,1
+
+#########################################################################
+# 500 (dev powers)
+[power]
+id=500
+name=Teleport
+type=fixed
+icon=176
+new_state=cast
+requires_empty_target=true
+requires_targeting=true
+requires_equipped_item=2000
+soundfx=soundfx/powers/teleport.ogg
+no_attack=true
+lifespan=533ms
+starting_pos=source
+buff_teleport=true
+buff=true
+post_effect=teleport,0,533ms
+
+[power]
+id=10015
+type=fixed
+icon=37
+new_state=cast
+face=true
+requires_los=true
+requires_targeting=true
+soundfx=soundfx/powers/shock.ogg
+use_hazard=true
+base_damage=ment
+lifespan=600ms
+radius=2.0
+floor=true
+trait_elemental=lightning
+starting_pos=target
+post_power=158
+target_range=5.0
+target_neighbor=1
+
+
+[power]
+id=501
+name=Turn Invisible
+type=fixed
+icon=176
+new_state=cast
+soundfx=soundfx/powers/teleport.ogg
+buff=true
+post_effect=dev_invis,0,0
+replace_by_effect=502,dev_invis,1
+
+[power]
+id=502
+name=Remove Invisibility
+type=fixed
+icon=176
+new_state=cast
+soundfx=soundfx/powers/teleport.ogg
+buff=true
+remove_effect=dev_invis,1
+

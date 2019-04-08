@@ -1,0 +1,8 @@
+APPEND
+
+# Miscellaneous engine settings
+
+save_prefix=fallen
+currency_id=1
+sell_without_vendor=false
+

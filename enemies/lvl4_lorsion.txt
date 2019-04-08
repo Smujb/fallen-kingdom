@@ -1,0 +1,38 @@
+INCLUDE enemies/base/skeleton.txt
+
+name=Lorsion
+level=4
+categories=lorsion
+xp=16
+
+defeat_status=fallen_lorsion_defeated
+
+# combat stats
+stat=hp,1600
+speed=4.5
+turn_delay=400ms
+chance_pursue=10
+
+power=melee,1640,10
+power=melee,179,5
+power=ranged,40002,2
+passive_powers=185,194
+
+stat=accuracy,115
+stat=avoidance,15
+stat=poise,100
+
+stat=dmg_melee_min,30
+stat=dmg_melee_max,45
+cooldown=1512ms
+
+stat=absorb_min,4
+stat=absorb_max,4
+
+# loot
+loot_count=5,8
+
+loot=loot/level_1.txt
+quest_loot=fallen_lorsion_init,fallen_lorsion_item,1000
+
+

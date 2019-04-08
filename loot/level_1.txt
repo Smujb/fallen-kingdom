@@ -1,0 +1,3 @@
+INCLUDE loot/_level_1.txt
+# gold
+loot=currency,100,15,25

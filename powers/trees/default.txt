@@ -1,0 +1,30 @@
+# tab 0
+[tab]
+title=Physical
+
+# tab 1
+[tab]
+title=Mental
+
+# tab 3 (developer)
+[tab]
+title=Dev
+
+#######Physical Tab##########
+# swing
+[power]
+id=10001
+tab=0
+position=48,80
+
+# quake
+[power]
+id=10002
+tab=0
+position=240,80
+
+[power]
+id=246
+tab=2
+position=240,80
+

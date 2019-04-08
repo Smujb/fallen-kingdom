@@ -1,0 +1,11 @@
+name=Infested Caves
+
+[quest]
+requires_status=fallen_infested_init
+requires_not_status=fallen_infested_defeated
+quest_text=Go to the Infested caves to the west of the Grasslands and destroy it's unwanted inhabitants.
+
+[quest]
+requires_status=fallen_infested_defeated
+requires_not_status=fallen_infested_reward
+quest_text=Return to the blacksmith and receive your reward.

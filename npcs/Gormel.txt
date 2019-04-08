@@ -1,0 +1,11 @@
+name=Gormel
+
+# animation info
+gfx=animations/enemies/skeleton_mage.txt
+
+talker=true
+
+[dialog]
+topic=F
+him=How dare you disturb my tomb!
+set_status=fallen_gormel_spawn

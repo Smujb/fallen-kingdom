@@ -1,0 +1,34 @@
+INCLUDE enemies/base/antlion_fossilized.txt
+
+name=Antilon Queen
+level=4
+categories=antilon_queen
+xp=16
+
+defeat_status=fallen_infested_defeated
+
+# combat stats
+stat=hp,400
+speed=4
+turn_delay=400ms
+chance_pursue=10
+
+power=melee,164,10
+power=melee,179,2
+power=ranged,40001,10
+
+stat=accuracy,105
+stat=avoidance,25
+stat=poise,100
+
+stat=dmg_melee_min,35
+stat=dmg_melee_max,40
+cooldown=1200ms
+
+stat=absorb_min,4
+stat=absorb_max,4
+
+# loot
+loot_count=5,7
+
+loot=loot/level_1.txt,4,5

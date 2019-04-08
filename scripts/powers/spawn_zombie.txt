@@ -1,0 +1,3 @@
+[event]
+chance_exec=5
+power=181

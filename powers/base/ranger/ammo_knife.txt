@@ -1,0 +1,4 @@
+directional=true
+animation=animations/powers/throw_knife.txt
+new_state=swing
+requires_item=8

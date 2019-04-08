@@ -1,0 +1,36 @@
+
+loot=9001,20,2,10
+loot=9002,10,1
+loot=9003,25,5,15
+loot=8,20,2,5
+loot=9004,15,2,3
+
+# crafting
+loot=751,15
+loot=752,15
+
+# normal clothes
+loot=4,10
+loot=5,10
+loot=6,10
+loot=7,10
+loot=96,5
+loot=97,5
+loot=98,5
+loot=99,5
+loot=100,5
+loot=101,5
+loot=102,5
+loot=103,5
+loot=104,5
+loot=105,5
+
+# normal weapons
+loot=8,10
+loot=9,10
+loot=10,10
+loot=107,10
+
+# normal misc
+loot=11,10
+

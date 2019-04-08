@@ -1,0 +1,61 @@
+name=Blacksmith
+
+portrait=images/portraits/female07.png
+
+# animation info
+gfx=animations/npcs/peasant_woman2.txt
+
+# shop info
+vendor=true
+constant_stock=8,9,7,11
+random_stock_count=100
+random_stock=loot/blacksmith.txt
+
+
+talker=true
+
+[dialog]
+topic=Craft
+her=I'm not the one you should talk to - go visit my friend over there.
+
+[dialog]
+requires_not_status=fallen_infested_init
+topic=Talk
+her=Greetings, stranger. It is not often anybody visits our small town. Please make yourself at home.
+you=Do you know how I can get into the Castle?
+her=Yes, but first can I ask a favor of you?
+you=What do you want?
+her=Can you destroy all the Antilons in the Infested Caves to the west of the Grasslands? They are upsetting the mining...
+you=Of course.
+set_status=fallen_infested_init
+msg=Quest added.
+
+[dialog]
+requires_status=fallen_infested_init
+requires_not_status=fallen_infested_defeated
+topic=Infested Caves
+her=Have you destroyed them yet?
+you=No.
+her=Please destroy them soon - our lives depend on it.
+
+[dialog]
+requires_status=fallen_infested_defeated
+requires_not_status=fallen_infested_reward
+topic=Infested Caves
+her=Have you destroyed them yet?
+you=Yes.
+her=Thank you - you can have this reward.
+her=The castle cannot easily be entered - Nex only allows his close friends and his evil creatures to enter.
+her=However, there is a secret entrance which can be opened with 9 artifacts that are guarded by several powerful undead warriors.
+her=Rumor has it that one of them hides in the caves you were just in.
+her=Be careful though, as he is dangerous.
+reward_item=2,5
+reward_xp=100
+set_status=fallen_infested_reward
+set_status=fallen_lorsion_init
+
+[dialog]
+requires_status=fallen_lorsion_defeated
+requires_not_status=fallen_lorsion_reward
+topic=Lorsion's Defeat
+her=I would not expect you to be able to do that, but seeing as you have the sword as proof, you should go show it to the magician.

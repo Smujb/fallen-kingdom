@@ -1,0 +1,328 @@
+[item]
+id=9001
+name=Arrows
+icon=23
+flavor=An arrow. Throwing will deal reduced damage - perhaps a bow would be useful?
+level=1
+quality=unique
+price=10
+max_quantity=100
+power=10003
+
+[item]
+id=9002
+name=Throwing Axe
+icon=479
+flavor=An axe. Throwing it will deal considerable damage.
+level=1
+quality=unique
+price=10
+max_quantity=20
+power=10004
+
+[item]
+id=9003
+name=Stones
+icon=15
+flavor=A stone. Throwing it will deal reduced damage - perhaps a slingshot would be useful?
+level=1
+quality=unique
+price=10
+max_quantity=100
+power=10006
+
+[item]
+id=9004
+name=Spear
+icon=457
+dmg=melee,30,35
+requires_stat=physical,4
+quality=normal
+item_type=main
+equip_flags=melee
+soundfx=soundfx/inventory/inventory_wood.ogg
+gfx=reinforced_club
+loot_animation=animations/loot/club.txt
+flavor=A spear. Throwing it will deal good damage. When used as a melee weapon it has extra reach.
+level=1
+quality=unique
+price=10
+max_quantity=10
+power=10008
+replace_power=10001,11001
+
+[item]
+id=12
+name=Ring of Shadows
+INCLUDE items/base/rings/gold_1.txt
+level=1
+price=0
+quality=unique
+quest_item=true
+power=10009
+
+[item]
+id=9005
+name=Unique Bow
+quality=normal
+item_type=off
+equip_flags=ranged,bow
+icon=114
+soundfx=soundfx/inventory/inventory_wood.ogg
+gfx=longbow
+loot_animation=animations/loot/longbow.txt
+level=1
+price=500
+quest_item=true
+dmg=ranged,45,50
+power=10003
+replace_power=10003,11002
+
+[item]
+id=9006
+name=Ring of Rage
+INCLUDE items/base/rings/gold_3.txt
+quest_item=true
+bonus=hp,50
+power=10010
+power_desc=Provides buffs on low health.
+
+[item]
+id=9007
+name=Multishot Bow
+quality=epic
+item_type=off
+equip_flags=ranged,bow
+icon=114
+soundfx=soundfx/inventory/inventory_wood.ogg
+gfx=longbow
+loot_animation=animations/loot/longbow.txt
+level=1
+price=1000
+dmg=ranged,45,50
+power=10003
+replace_power=10003,12002
+
+[item]
+id=9008
+name=Rapid Fire Bow
+quality=epic
+item_type=off
+equip_flags=ranged,bow
+icon=114
+soundfx=soundfx/inventory/inventory_wood.ogg
+gfx=longbow
+loot_animation=animations/loot/longbow.txt
+level=1
+price=1000
+dmg=ranged,45,50
+power=10003
+replace_power=10003,13002
+
+[item]
+id=9009
+name=Piercing Shot Bow
+quality=epic
+item_type=off
+equip_flags=ranged,bow
+icon=114
+soundfx=soundfx/inventory/inventory_wood.ogg
+gfx=longbow
+loot_animation=animations/loot/longbow.txt
+level=1
+price=1000
+dmg=ranged,45,50
+power=10003
+replace_power=10003,14002
+
+[item]
+id=9010
+name=Multishot Slingshot
+INCLUDE items/base/weapons/ranged/slingshot.txt
+quality=epic
+level=1
+price=500
+dmg=ranged,25,30
+requires_stat=offense,2
+power=10006
+replace_power=10006,11007
+
+[item]
+id=9011
+name=Rapid Fire Slingshot
+INCLUDE items/base/weapons/ranged/slingshot.txt
+quality=epic
+level=1
+price=500
+dmg=ranged,25,30
+requires_stat=offense,2
+power=10006
+replace_power=10006,12007
+
+[item]
+id=9012
+name=Piercing Slingshot
+INCLUDE items/base/weapons/ranged/slingshot.txt
+quality=epic
+level=1
+price=500
+dmg=ranged,25,30
+requires_stat=offense,2
+power=10006
+replace_power=10006,13007
+
+[item]
+id=9013
+name=Spellbook
+INCLUDE items/base/misc/spellbook.txt
+level=1
+price=0
+quality=unique
+quest_item=true
+bonus=mp,10
+bonus=mp_regen,10
+bonus=dmg_ment_min,5
+bonus=dmg_ment_max,5
+
+[item]
+id=9014
+name=Wand of Fire
+INCLUDE items/base/weapons/magic/wand.txt
+flavor=A wand that shoots fire that burns opponents.
+level=1
+price=1000
+dmg=ment,25,30
+dmg=melee,15,20
+quality=epic
+requires_stat=mental,4
+power=10012
+
+[item]
+id=9015
+name=Wand of Ice
+INCLUDE items/base/weapons/magic/wand.txt
+flavor=A wand that shoots ice that slows opponents.
+level=1
+price=1000
+dmg=ment,25,30
+dmg=melee,15,20
+quality=epic
+requires_stat=mental,4
+power=10013
+
+[item]
+id=9016
+name=Wand of Lightning
+INCLUDE items/base/weapons/magic/wand.txt
+flavor=A wand that shoots lightning that stuns opponents.
+level=1
+price=1000
+dmg=ment,25,30
+dmg=melee,15,20
+quality=epic
+requires_stat=mental,4
+power=10014
+
+[item]
+id=9017
+name=Cursed Wand
+INCLUDE items/base/weapons/magic/wand.txt
+flavor=A very powerful wand that does large amounts of damage and applies many different debuffs to the enemy.
+power_desc=You can feel malevolent energy lurking in this item.
+level=1
+price=1000
+dmg=ment,25,30
+dmg=melee,15,20
+quality=epic
+requires_stat=mental,4
+power=10017
+
+[item]
+id=9018
+INCLUDE items/categories/base/book_of_sacrifice.txt
+level=1
+bonus=hp_regen,20
+power=10020
+power_desc=Write your name in your blood to upgrade the book. (Requires 40 HP)
+
+[item]
+id=9019
+INCLUDE items/categories/base/book_of_sacrifice.txt
+level=2
+power=10020
+bonus=hp_regen,40
+replace_power=10020,11020
+power_desc=Write your name in your blood to upgrade the book. (Requires 80 HP)
+
+[item]
+id=9020
+INCLUDE items/categories/base/book_of_sacrifice.txt
+level=2
+power=10020
+bonus=hp_regen,80
+replace_power=10020,12020
+replace_power=11020,12020
+power_desc=Write your name in your blood to upgrade the book. (Requires 160 HP)
+
+[item]
+id=9021
+INCLUDE items/categories/base/book_of_sacrifice.txt
+level=2
+power=10020
+bonus=hp_regen,120
+replace_power=10020,13020
+replace_power=11020,13020
+replace_power=12020,13020
+power_desc=Write your name in your blood to upgrade the book. (Requires 320 HP)
+
+[item]
+id=9022
+INCLUDE items/categories/base/book_of_sacrifice.txt
+level=2
+bonus=hp_regen,160
+power_desc=The book is fully upgraded.
+#####################################################################
+[item]
+id=9023
+INCLUDE items/categories/base/lucky_pendant.txt
+level=1
+bonus=currency_find,10
+power=10021
+power_desc=Feed the pendant gold to upgrade it. (Requires 100 Gold)
+
+[item]
+id=9024
+INCLUDE items/categories/base/lucky_pendant.txt
+level=2
+power=10021
+bonus=currency_find,20
+replace_power=10021,11021
+power_desc=Feed the pendant gold to upgrade it. (Requires 200 Gold)
+
+[item]
+id=9025
+INCLUDE items/categories/base/lucky_pendant.txt
+level=2
+power=10020
+bonus=currency_find,30
+replace_power=10021,12021
+replace_power=11021,12021
+power_desc=Feed the pendant gold to upgrade it. (Requires 400 Gold)
+
+[item]
+id=9026
+INCLUDE items/categories/base/lucky_pendant.txt
+level=2
+power=10021
+bonus=currency_find,40
+replace_power=10021,13021
+replace_power=11021,13021
+replace_power=12021,13021
+power_desc=Feed the pendant gold to upgrade it. (Requires 800 Gold)
+
+[item]
+id=9027
+INCLUDE items/categories/base/lucky_pendant.txt
+level=2
+bonus=currency_find,50
+power_desc=The pendant is fully upgraded.

@@ -1,0 +1,2 @@
+[event]
+reward_item=9021
