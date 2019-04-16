@@ -1,0 +1,37 @@
+caption_margins=5,5
+caption_background=0,0,0,200
+music=music/wind_ambient.ogg
+
+[scene]
+image=images/menus/backgrounds/fire_temple.png,1
+caption=You sit, contemplating the fall of Ethrythgate, the peak of human endevour...
+pause=8s
+caption=At the height of it's power, it was ruled by just kings, who brough peace to the land.
+pause=8s
+caption=But not everybody was happy.
+pause=8s
+image=images/cutscenes/arrival.png,1
+caption=Bandits, who had been forever banished from the kingdom, began circling like vultures, waiting for a weak spot.
+pause=8s
+caption=These bandits had traded their minds and well-being for power from below.
+pause=8s
+caption=You, the son of the King, and a young prince, were not allowed to fight. How unfair, you though.
+pause=8s
+caption=Stealing away from the King's watchful eye, you disguised yourself as a soldier.
+pause=8s
+caption=The bandits, however were merciless, and severely wounded you. By the time you could be brough home, it was too late.
+pause=8s
+image=images/cutscenes/obelisk.png
+caption=The King could not bear to see you die of your wounds, so he had a ritual performed, which revived you.
+pause=8s
+caption=But everything has a cost...
+pause=8s
+caption=This time, it was the King's soul. He had sold is soul to the devil to see you resurrected. And now that he is dead,
+pause=8s
+caption=the throne is no longer yours by rights. It belongs to the evil Necromacer Nex, who is the slave of Satan and son of Hades, god of the underworld...
+pause=10s
+caption=But you cannot allow evil to take over the world. Some might call it destiny, but Something inside calls you...
+pause=8s
+image=images/menus/logo.png
+caption=To save the Fallen Kingdom...
+pause=8s

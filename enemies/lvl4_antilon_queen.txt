@@ -8,7 +8,7 @@ xp=16
 defeat_status=fallen_infested_defeated
 
 # combat stats
-stat=hp,400
+stat=hp,440
 speed=4
 turn_delay=400ms
 chance_pursue=10

@@ -15,10 +15,9 @@ stat=mp_regen,10
 stat_per_primary=mental,mp_regen,2
 
 stat=accuracy,85
-stat_per_primary=offense,accuracy,1
+stat_per_primary=offense,accuracy,3
 
-stat=avoidance,15
-stat_per_primary=defense,avoidance,1
+stat_per_primary=defense,avoidance,2
 
 stat=crit,5
 

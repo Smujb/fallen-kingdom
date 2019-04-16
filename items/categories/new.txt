@@ -74,7 +74,7 @@ loot_animation=animations/loot/longbow.txt
 level=1
 price=500
 quest_item=true
-dmg=ranged,45,50
+dmg=ranged,35,40
 power=10003
 replace_power=10003,11002
 
@@ -99,7 +99,7 @@ gfx=longbow
 loot_animation=animations/loot/longbow.txt
 level=1
 price=1000
-dmg=ranged,45,50
+dmg=ranged,35,40
 power=10003
 replace_power=10003,12002
 
@@ -115,7 +115,7 @@ gfx=longbow
 loot_animation=animations/loot/longbow.txt
 level=1
 price=1000
-dmg=ranged,45,50
+dmg=ranged,35,40
 power=10003
 replace_power=10003,13002
 
@@ -131,7 +131,7 @@ gfx=longbow
 loot_animation=animations/loot/longbow.txt
 level=1
 price=1000
-dmg=ranged,45,50
+dmg=ranged,35,40
 power=10003
 replace_power=10003,14002
 
@@ -142,7 +142,7 @@ INCLUDE items/base/weapons/ranged/slingshot.txt
 quality=epic
 level=1
 price=500
-dmg=ranged,25,30
+dmg=ranged,25,27
 requires_stat=offense,2
 power=10006
 replace_power=10006,11007
@@ -154,7 +154,7 @@ INCLUDE items/base/weapons/ranged/slingshot.txt
 quality=epic
 level=1
 price=500
-dmg=ranged,25,30
+dmg=ranged,25,27
 requires_stat=offense,2
 power=10006
 replace_power=10006,12007
@@ -166,7 +166,7 @@ INCLUDE items/base/weapons/ranged/slingshot.txt
 quality=epic
 level=1
 price=500
-dmg=ranged,25,30
+dmg=ranged,25,27
 requires_stat=offense,2
 power=10006
 replace_power=10006,13007
@@ -326,3 +326,17 @@ INCLUDE items/categories/base/lucky_pendant.txt
 level=2
 bonus=currency_find,50
 power_desc=The pendant is fully upgraded.
+
+[item]
+id=9028
+name=Corrupting Wand
+INCLUDE items/base/weapons/magic/wand.txt
+flavor=A very powerful wand that debuffs the enemy and has a chance to convert them.
+power_desc=This wand does no damage and it requires HP from the wearer
+level=1
+price=1000
+dmg=ment,25,30
+dmg=melee,15,20
+quality=epic
+requires_stat=mental,4
+power=10022

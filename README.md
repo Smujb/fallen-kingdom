@@ -8,16 +8,11 @@ Default game found here: https://github.com/flareteam/flare-game
 
 Complete rework of the powers system, now powers cannot be upgraded, and bows and slingshots require ammo. Knives and axes can be thrown, and are found more commonly. All players start with a knife, but the Warrior starts with a shortsword.
 
-V1.4.1:
+V1.4.2:
+Added an Intro cutscene
 
-Improved the Desert map and the second boss room
+Removed useable boss weapons due to storyline rework
 
-Fixed the Developer teleporting power
+Added a wand of Corruption that does no damage and requires HP, but has a chance to convert an enemy when it hits them. This effect only lasts 10 seconds, but it can be used on any enemy, even bosses.
 
-Buffed the Shortsword
-
-Added Lorsion's Blade as a useable weapon. Consider using the boss weapons as a kind of "Easy mode". Balance changes may be made to it in future.
-
-Made the Desert map availible to non-developer classes
-
-Added Skeleton enemies who have high evasion but low HP for their level
+Added a new Desert map, more content will branch off from it in future.

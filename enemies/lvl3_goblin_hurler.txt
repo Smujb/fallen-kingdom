@@ -7,7 +7,7 @@ rarity=uncommon
 xp=2
 
 # combat stats
-stat=hp,95
+stat=hp,115
 speed=2.9
 turn_delay=400ms
 

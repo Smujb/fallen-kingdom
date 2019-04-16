@@ -473,6 +473,18 @@ location=37,99,2,1
 activate=on_trigger
 hotspot=location
 intermap=maps/desert_test.txt,15,13
+requires_level=3
+tooltip=Desert
+
+[event]
+# Desert
+type=event
+location=37,99,2,1
+activate=on_trigger
+hotspot=location
+msg=You must be stronger (Requires Level 3)
+repeat=false
+requires_not_level=3
 tooltip=Desert
 
 [enemy]

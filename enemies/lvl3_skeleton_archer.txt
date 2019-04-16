@@ -2,19 +2,19 @@ INCLUDE enemies/base/skeleton_archer.txt
 
 name=Skeleton Archer
 level=3
-categories=skeleton_archer,skeleton,undead,dungeon,grassland
+categories=skeleton_archer,skeleton,undead,dungeon,grassland,skeleton_plains
 rarity=rare
 xp=4
 
 # combat stats
-stat=hp,75
+stat=hp,90
 speed=4
 turn_delay=200ms
 
 passive_powers=185
 
 stat=accuracy,100
-stat=avoidance,50
+stat=avoidance,40
 stat=poise,13
 
 stat=dmg_melee_min,20
@@ -31,10 +31,14 @@ loot=loot/level_1.txt
 
 # Ranged units behaviour, see docs/ranged_behavior.txt
 chance_pursue=4
-chance_flee=20
+chance_flee=40
 flee_duration=3s
 flee_cooldown=1s
 flee_range=8
 threat_range=15,20
 power=melee,164,5
 power=ranged,171,50
+power=ranged,13002,10
+
+loot=9001,30,2,5
+loot=9001,30,2,5

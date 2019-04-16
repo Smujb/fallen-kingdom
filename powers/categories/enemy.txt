@@ -140,24 +140,11 @@ modifier_accuracy=multiply,75,0
 # fireball
 [power]
 id=173
-type=missile
-new_state=cast
-face=true
-directional=true
-requires_los=true
-animation=animations/powers/fireball.txt
-soundfx=soundfx/powers/fireball.ogg
-use_hazard=true
-aim_assist=true
-base_damage=ment
-lifespan=866ms
-radius=1.0
-speed=15
-trait_elemental=fire
-post_power=158
-wall_power=158
-modifier_damage=multiply,105,0
-modifier_accuracy=multiply,75,0
+INCLUDE powers/base/magician/fire.txt
+icon=2
+requires_mp=4
+trait_armor_penetration=true
+requires_equipped_item=9014
 
 # skeleton shock
 [power]
@@ -1111,8 +1098,8 @@ speed=15
 trait_elemental=fire
 post_power=158
 wall_power=158
-modifier_damage=multiply,105,0
-modifier_accuracy=multiply,75,0
+modifier_damage=multiply,105
+post_effect=burning,5,5s
 count=3
 angle_variance=6
 speed_variance=0.1
@@ -1247,6 +1234,8 @@ post_effect=earth_weakness,-150,4s
 post_effect=stun,0,4s
 post_power=160
 wall_power=160
+requires_mp=2
+requires_equipped_item=1100
 
 # basic melee attack (earth)
 [power]

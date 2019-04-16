@@ -283,7 +283,7 @@ requires_equipped_item=9016
 
 [power]#Lightning Wand (repeated)
 id=11014
-INCLUDE powers/base/magician/shock.txt
+INCLUDE powers/base/magician/shock_looped.txt
 icon=2
 requires_mp=1
 new_state=instant
@@ -399,6 +399,14 @@ new_state=cast
 requires_item=1,800
 script=on_cast,scripts/powers/lucky_pendant_4.txt
 requires_equipped_item=9026,1
+
+[power]#Cursed Wand
+id=10022
+INCLUDE powers/base/magician/corruption.txt
+icon=2
+requires_hp=10
+trait_armor_penetration=true
+requires_equipped_item=9028
 
 #########################################################################
 # 500 (dev powers)

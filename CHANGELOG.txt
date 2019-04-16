@@ -1,4 +1,13 @@
-V1.4.1 (Latest):
+V1.4.2 (latest):
+Added an Intro cutscene
+
+Removed useable boss weapons due to storyline rework
+
+Added a wand of Corruption that does no damage and requires HP, but has a chance to convert an enemy when it hits them. This effect only lasts 10 seconds, but it can be used on any enemy, even bosses.
+
+Added a new Desert map, more content will branch off from it in future.
+
+V1.4.1:
 
 Improved the Desert map and the second boss room
 

@@ -7,7 +7,7 @@ rarity=common
 xp=2
 
 # combat stats
-stat=hp,90
+stat=hp,110
 speed=3.25
 melee_range=1.125
 turn_delay=400ms

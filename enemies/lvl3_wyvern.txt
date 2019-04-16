@@ -7,7 +7,7 @@ rarity=common
 xp=4
 
 # combat stats
-stat=hp,100
+stat=hp,120
 speed=4.1
 turn_delay=200ms
 chance_pursue=25

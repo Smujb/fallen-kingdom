@@ -1,31 +1,30 @@
 INCLUDE enemies/base/skeleton_weak.txt
 
-name=Skeleton
+name=Skeleton Charger
 level=3
-categories=skeleton,undead,dungeon
+categories=skeleton,undead,dungeon,skeleton_plains
 rarity=common
 xp=4
 
 # combat stats
-stat=hp,85
-speed=5
+stat=hp,100
+speed=6.5
 turn_delay=400ms
 chance_pursue=10
 
 power=melee,164,10
 passive_powers=185
 
-stat=accuracy,90
-stat=avoidance,60
+stat=accuracy,120
+stat=avoidance,30
 stat=poise,18
 
-stat=dmg_melee_min,25
+stat=dmg_melee_min,27
 stat=dmg_melee_max,35
-cooldown=1575ms
-
-stat=absorb_min,2
-stat=absorb_max,2
+cooldown=250ms
 
 # loot
 loot=loot/level_1.txt
+
+chance_pursue=100
 

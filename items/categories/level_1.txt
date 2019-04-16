@@ -12,7 +12,7 @@ gfx=longbow
 loot_animation=animations/loot/longbow.txt
 level=1
 price=500
-dmg=ranged,45,50
+dmg=ranged,35,40
 power=10003
 replace_power=10003,10002
 
@@ -22,7 +22,7 @@ name=Shortsword
 INCLUDE items/base/weapons/melee/shortsword.txt
 level=1
 price=500
-dmg=melee,45,55
+dmg=melee,40,45
 requires_stat=physical,4
 power=10001
 
@@ -71,7 +71,7 @@ name=Slingshot
 INCLUDE items/base/weapons/ranged/slingshot.txt
 level=1
 price=100
-dmg=ranged,25,30
+dmg=ranged,25,27
 requires_stat=offense,2
 power=10006
 replace_power=10006,10007
