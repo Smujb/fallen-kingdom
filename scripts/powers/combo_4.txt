@@ -1,0 +1,2 @@
+[event]
+msg=4 hit combo!

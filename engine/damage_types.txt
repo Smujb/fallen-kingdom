@@ -16,3 +16,11 @@ name_max=Resist Max
 min=resist_min
 max=resist_max
 
+[damage_type]
+id=hand
+name=Hand Combat
+name_min=Hand Combat Min
+name_max=Hand Combat Max
+min=hand_min
+max=hand_max
+

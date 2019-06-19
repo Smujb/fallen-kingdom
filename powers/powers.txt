@@ -19,6 +19,106 @@ cooldown=600ms
 starting_pos=melee
 aim_assist=true
 
+[power]
+id=13001
+name=Punch
+type=fixed
+icon=31
+description=Basic melee attack.
+new_state=swing
+face=true
+use_hazard=true
+base_damage=hand
+lifespan=33ms
+radius=1.0
+starting_pos=melee
+aim_assist=true
+modifier_accuracy=multiply,125,0
+
+[power]
+id=14001
+name=Combo Punch
+type=fixed
+buff=true
+icon=31
+description=Basic melee attack.
+new_state=swing
+face=true
+use_hazard=true
+base_damage=hand
+radius=1.0
+starting_pos=melee
+aim_assist=true
+modifier_accuracy=multiply,125,0
+post_effect=combo_2,100,2s
+replace_by_effect=14101,combo_2,1
+script=on_cast,scripts/powers/combo_2.txt
+
+[power]
+id=14101
+name=Combo Punch (2-hit-combo)
+type=fixed
+buff=true
+icon=2
+description=Basic melee attack.
+new_state=swing
+face=true
+use_hazard=true
+base_damage=hand
+radius=1.0
+starting_pos=melee
+aim_assist=true
+modifier_damage=multiply,125,0
+modifier_accuracy=multiply,75,0
+post_effect=combo_3,100,2s
+remove_effect=combo_2,1
+replace_by_effect=14201,combo_3,1
+script=on_cast,scripts/powers/combo_3.txt
+post_power=2001
+
+[power]
+id=14201
+name=Combo Punch (3-hit-combo)
+type=fixed
+buff=true
+icon=2
+description=Basic melee attack.
+new_state=swing
+face=true
+use_hazard=true
+base_damage=hand
+radius=1.0
+starting_pos=melee
+aim_assist=true
+modifier_damage=multiply,150,0
+modifier_accuracy=multiply,75,0
+remove_effect=combo_3,1
+post_effect=combo_3,100,2s
+replace_by_effect=14201,combo_3,1
+script=on_cast,scripts/powers/combo_3.txt
+hp_steal=100
+
+[power]
+id=14301
+name=Combo Punch (4-hit-combo)
+type=fixed
+buff=true
+icon=2
+description=Basic melee attack.
+new_state=swing
+face=true
+use_hazard=true
+base_damage=hand
+radius=1.0
+starting_pos=melee
+aim_assist=true
+modifier_damage=multiply,200,0
+modifier_accuracy=multiply,75,0
+post_effect=combo_4,100,2s
+#replace_by_effect=14301,combo_4,1
+script=on_cast,scripts/powers/combo_4.txt
+post_power=13001
+
 [power]#Spear version
 id=11001
 name=Swing (Spear)
@@ -400,13 +500,28 @@ requires_item=1,800
 script=on_cast,scripts/powers/lucky_pendant_4.txt
 requires_equipped_item=9026,1
 
-[power]#Cursed Wand
+[power]#Corrupting Wand
 id=10022
 INCLUDE powers/base/magician/corruption.txt
 icon=2
-requires_hp=10
+requires_hp=20
+sacrifice=true
 trait_armor_penetration=true
 requires_equipped_item=9028
+
+[power]
+id=10023
+name=Heal
+description=Heal Allies
+icon=79
+type=fixed
+new_state=cast
+buff_party=true
+soundfx=soundfx/powers/heal.ogg
+requires_hp=25
+post_effect=hp_restore,50,33ms
+post_effect=heal_animation,0,600ms
+cooldown=2500ms
 
 #########################################################################
 # 500 (dev powers)

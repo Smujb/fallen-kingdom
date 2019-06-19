@@ -1,4 +1,9 @@
-V1.4.2 (latest):
+V1.4.3 (latest):
+Reworked Wand of Corruption
+
+Added a "Heal Allies" option availible from the powers menu.
+
+V1.4.2:
 Added an Intro cutscene
 
 Removed useable boss weapons due to storyline rework

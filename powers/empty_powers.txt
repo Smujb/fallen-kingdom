@@ -1,0 +1,9 @@
+[power]
+id=2001
+name=Haste
+icon=9
+description=Move at an increased speed for a limited time.
+type=fixed
+new_state=cast
+buff=true
+post_effect=slow,25,0

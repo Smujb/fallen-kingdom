@@ -4,8 +4,7 @@
 id=convert
 name=Convert
 type=convert
-#animation=animations/powers/spark_red_loop.txt
-animation=animations/powers/runes_green.txt
+animation=animations/powers/dark_mist_alt.txt
 
 # Special-case effects
 [effect]
@@ -48,6 +47,27 @@ id=slow
 name=Slow
 type=speed
 icon=24
+can_stack=false
+
+[effect]
+id=combo_2
+name=2-hit combo
+type=speed
+icon=31
+can_stack=false
+
+[effect]
+id=combo_3
+name=3-hit combo
+type=speed
+icon=31
+can_stack=false
+
+[effect]
+id=combo_4
+name=3-hit combo
+type=speed
+icon=31
 can_stack=false
 
 [effect]

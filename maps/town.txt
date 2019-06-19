@@ -7,6 +7,7 @@ orientation=isometric
 background_color=0,0,0,255
 music=music/overworld_theme.ogg
 tileset=tilesetdefs/tileset_grassland.txt
+parallax_layers=maps/parallax/rain.txt
 title=Town
 
 [tilesets]

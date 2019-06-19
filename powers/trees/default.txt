@@ -24,6 +24,11 @@ tab=0
 position=240,80
 
 [power]
+id=10023
+tab=0
+position=150,80
+
+[power]
 id=246
 tab=2
 position=240,80
